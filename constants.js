@@ -110,7 +110,7 @@ export const tracks: Tracks = {
   "CODE_QUALITY": {
     "displayName": "Code Quality",
     "category": "A",
-    "description": "",
+    "description": "Description",
     "milestones": [{
       "summary": "I can leave the code I work on in as good of shape as I found it",
       "signals": [
@@ -150,7 +150,7 @@ export const tracks: Tracks = {
   "TOOL_PROFICIENCY": {
     "displayName": "Tool Proficiency",
     "category": "A",
-    "description": "",
+    "description": "Description",
     "milestones": [{
       "summary": "I can successfully use browser development tools, internal build tools, source control, and testing platforms and successfully adopt team processes and standards with oversight and guidance",
       "signals": [
@@ -190,7 +190,7 @@ export const tracks: Tracks = {
   "DESIGN": {
     "displayName": "Design",
     "category": "A",
-    "description": "",
+    "description": "Description",
     "milestones": [{
       "summary": "I can assess designs for feasibility and implement designs faithfully and to SOQ standards",
       "signals": [
@@ -230,7 +230,7 @@ export const tracks: Tracks = {
   "IDEAS": {
     "displayName": "Ideas",
     "category": "B",
-    "description": "",
+    "description": "Description",
     "milestones": [{
       "summary": "I can proactively ask questions and have a curiousity about better ways to accomplish tasks",
       "signals": [
@@ -270,7 +270,7 @@ export const tracks: Tracks = {
   "COMMUNICATION": {
     "displayName": "Communication",
     "category": "B",
-    "description": "",
+    "description": "Description",
     "milestones": [{
       "summary": "I can convey concepts to UI and project teams and am proactive at keeping others up to date",
       "signals": [
@@ -310,7 +310,7 @@ export const tracks: Tracks = {
   "DRIVE": {
     "displayName": "Drive for Improvement",
     "category": "B",
-    "description": "",
+    "description": "Description",
     "milestones": [{
       "summary": "I can show a strong desire to learn diverse technologies, techniques and topics out of curiosity and can seek out help and feedback when needed",
       "signals": [
@@ -350,7 +350,7 @@ export const tracks: Tracks = {
   "CULTURE": {
     "displayName": "Culture",
     "category": "B",
-    "description": "",
+    "description": "Description",
     "milestones": [{
       "summary": "I can learn DEG's core values and build relationships within the team",
       "signals": [
@@ -390,7 +390,7 @@ export const tracks: Tracks = {
   "LEADERSHIP": {
     "displayName": "Leadership",
     "category": "B",
-    "description": "",
+    "description": "Description",
     "milestones": [{
       "summary": "I can build professional relationships with manager, peers, and stakeholders",
       "signals": [
