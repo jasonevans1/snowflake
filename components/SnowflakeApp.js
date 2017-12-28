@@ -40,7 +40,6 @@ const coerceMilestone = (value: number): Milestone => {
     case 2: return 2
     case 3: return 3
     case 4: return 4
-    case 5: return 5
     default: return 0
   }
 }
@@ -50,36 +49,40 @@ const emptyState = (): SnowflakeAppState => {
     name: '',
     title: '',
     milestoneByTrack: {
-      'DEVELOPMENT_SKILLS': 0,
-      'CODE_QUALITY': 0,
-      'TOOL_PROFICIENCY': 0,
-      'DESIGN': 0,
-      'IDEAS': 0,
-      'COMMUNICATION': 0,
-      'DRIVE': 0,
-      'CULTURE': 0,
-      'LEADERSHIP': 0
+        'MAGENTO': 0,
+        'ECOMMERCE': 0,
+        'FOUNDATIONS': 0,
+        'SECURITY': 0,
+        'PROJECT_MANAGEMENT': 0,
+        'COMMUNICATION': 0,
+        'CRAFT': 0,
+        'IDEAS': 0,
+        'MENTORSHIP': 0,
+        'LEADERSHIP': 0,
+        'CULTURE': 0
     },
-    focusedTrackId: 'DEVELOPMENT_SKILLS'
+    focusedTrackId: 'MAGENTO'
   }
 }
 
 const defaultState = (): SnowflakeAppState => {
   return {
     name: 'Random DEG Employee',
-    title: 'UI Engineer',
+    title: 'Magento Engineer',
     milestoneByTrack: {
-      'DEVELOPMENT_SKILLS': 3,
-      'CODE_QUALITY': 2,
-      'TOOL_PROFICIENCY': 3,
-      'DESIGN': 3,
-      'IDEAS': 3,
-      'COMMUNICATION': 3,
-      'DRIVE': 3,
-      'CULTURE': 4,
-      'LEADERSHIP': 3
+        'MAGENTO': 2,
+        'ECOMMERCE': 2,
+        'FOUNDATIONS': 2,
+        'SECURITY': 2,
+        'PROJECT_MANAGEMENT': 3,
+        'COMMUNICATION': 2,
+        'CRAFT': 1,
+        'IDEAS': 3,
+        'MENTORSHIP': 2,
+        'LEADERSHIP': 1,
+        'CULTURE': 3
     },
-    focusedTrackId: 'DEVELOPMENT_SKILLS'
+    focusedTrackId: 'MAGENTO'
   }
 }
 
