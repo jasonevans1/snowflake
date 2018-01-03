@@ -72,15 +72,15 @@ const defaultState = (): SnowflakeAppState => {
     milestoneByTrack: {
         'MAGENTO': 2,
         'ECOMMERCE': 2,
-        'FOUNDATIONS': 2,
-        'SECURITY': 2,
-        'PROJECT_MANAGEMENT': 3,
-        'COMMUNICATION': 2,
+        'FOUNDATIONS': 1,
+        'SECURITY': 1,
+        'PROJECT_MANAGEMENT': 2,
+        'COMMUNICATION': 1,
         'CRAFT': 1,
-        'IDEAS': 3,
-        'MENTORSHIP': 2,
+        'IDEAS': 1,
+        'MENTORSHIP': 1,
         'LEADERSHIP': 1,
-        'CULTURE': 3
+        'CULTURE': 2
     },
     focusedTrackId: 'MAGENTO'
   }

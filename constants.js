@@ -35,23 +35,20 @@ export const milestoneToPoints = (milestone: Milestone): number => {
 
 export const pointsToLevels = {
     '0': '1.1',
-    '5': '1.2',
-    '11': '1.3',
-    '17': '2.1',
-    '23': '2.2',
-    '29': '2.3',
-    '36': '3.1',
-    '43': '3.2',
-    '50': '3.3',
-    '58': '4.1',
-    '66': '4.2',
-    '74': '4.3',
-    '90': '5.1',
-    '110': '5.2',
-    '135': '5.3',
+    '6': '1.2',
+    '12': '1.3',
+    '18': '2.1',
+    '25': '2.2',
+    '32': '2.3',
+    '40': '3.1',
+    '48': '3.2',
+    '57': '3.3',
+    '66': '4.1',
+    '75': '4.2',
+    '85': '4.3',
 }
 
-export const maxLevel = 135
+export const maxLevel = 85
 
 export type Track = {
   displayName: string,
@@ -557,10 +554,10 @@ export const categoryColorScale = d3.scaleOrdinal()
   .range(['#00abc2', '#428af6', '#e1439f', '#e54552'])
 
 export const titles = [
-  {label: 'Associate Magento Engineer', minPoints: 0, maxPoints: 44},
-  {label: 'Magento Engineer', minPoints: 45, maxPoints: 58},
-  {label: 'Senior Magento Engineer', minPoints: 59},
-  {label: 'Magento Team Lead', minPoints: 70}
+  {label: 'Associate Magento Engineer', minPoints: 0, maxPoints: 17},
+  {label: 'Magento Engineer', minPoints: 18, maxPoints: 39},
+  {label: 'Senior Magento Engineer', minPoints: 40},
+  {label: 'Magento Team Lead', minPoints: 56}
 ]
 
 export const eligibleTitles = (milestoneMap: MilestoneMap): string[] => {
