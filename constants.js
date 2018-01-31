@@ -84,36 +84,49 @@ export const tracks: Tracks = {
       "summary": "Proficient knowledge of Magento 1.x development and basic knowledge of Magento 2.x development. Follows Magento development best practices.",
       "signals": [
         "Make simple changes to an existing Magento 1.x modules",
-          "Understands the major differences between M1 and M2 development"
+          "Understands the major differences between M1 and M2 development",
+          "Investigate configuration issues on a Magento 1.x site"
       ],
       "examples": [
         "Add a new Magento system configuration.",
+          "Add a facebook link to the footer of a site.",
+          "Add a new product EAV attribute."
       ],
     }, {
       "summary": "Develops advanced modules on Magento 1.x. Demonstrates front-end and back-end development knowledge of both Magento 1.x and 2.x.",
       "signals": [
-        "Make simple changes to an existing Magento 2.x module"
+        "Make simple changes to an existing Magento 2.x module",
+          "Build new Magento 1.x modules from scratch.",
+          "Investigate and fix production issues."
       ],
       "examples": [
-        "Build a new Magento 1.x modules from scratch.",
+        "Apply Magento security patches and upgrades.",
+          "Create install and upgrade scripts for new database tables.",
+          "Install and configure Magento 1 and 2 extensions."
       ],
     }, {
       "summary": "Develops advanced modules on both Magento 1.x and Magento 2.x. Builds complex solutions on the Magento platform.",
       "signals": [
-        ""
+          "Build new Magento 1.x and 2.x modules from scratch.",
+          "Build Magento 1.x and 2.x integrations with backend systems.",
+          "Create custom Magento 2.x APIs"
       ],
       "examples": [
-        "Build new Magento 1.x and 2.x modules from scratch.",
-          "Build Magento 1.x and 2.x integrations with backend systems."
+          "Implement an M2 integration to a ERP system from scratch.",
+          "Upgrade Magento to a new major version",
+          "Import products and customers into new Magento site."
       ],
     }, {
       "summary": "Develops advanced modules on both Magento 1.x and Magento 2.x. Is an expert on Magento development and sets the direction and practices for Magento development.",
       "signals": [
-        "Design a new complex feature in Magento and lead the development."
+        "Design a new complex feature in Magento and lead the development.",
+          "Build Magento 1.x and 2.x integrations with backend systems.",
+          "Learn and teach Magento best practices."
       ],
       "examples": [
-        "Learn and teach Magento best practices.",
-          "Build Magento 1.x and 2.x integrations with backend systems."
+          "Lead implementation of complex ERP system integration",
+          "Investigate and resolve complex production issues.",
+          "Set the technical direction of the Magento engineering team."
       ],
     }
     ],
@@ -126,36 +139,49 @@ export const tracks: Tracks = {
     "milestones": [{
       "summary": "Works effectively on an ecommerce system. Gaining knowledge of ecommerce systems.",
       "signals": [
-        "Understands at a high level the Magento database schema"
+        "Understands at a high level the Magento database schema",
+          "Continually learning the basics of ecommerce systems.",
+          "Perform basic Magento admin tasks."
       ],
       "examples": [
         "Make simple admin changes in Magento.",
+          "Asks questions and finds answers to ecommerce related issues.",
+          "Create catalog, promotions and orders in Magento."
       ],
     }, {
       "summary": "Develops and maintains an ecommerce system. Has proficient knowledge of catalog, order and inventory management.",
       "signals": [
-        "Understands the Magento database schema."
+        "Explains the Magento database schema to another engineer.",
+          "Perform advanced Magento admin tasks.",
+          "Explains how the Magento order process works."
       ],
       "examples": [
-        "Add a new EAV catalog attribute.",
-          "Configure a new shipping method."
+        "Create invoices, shipments, credit memos.",
+          "Configure a new shipping method.",
+          "Setup complex shopping cart rules."
       ],
     }, {
       "summary": "Demonstrates an advanced knowledge of ecommerce systems. Advanced knowledge of B2C and B2B catalog and order management.",
       "signals": [
-        "Understands how to integrate Magento with an order management system"
+        "Understands how to integrate Magento with an order management system",
+          "Provides recommendations for designing solotions to ecommerce implementations",
+          "Configure Magento 2 B2B shared catalogs and companies. "
       ],
       "examples": [
         "Build a B2B catalog with custom pricing and payment options",
+          "Implements cron job to process shipment files from a backend system.",
+          "Build API to integration with a backend sytem to import pricing."
       ],
     }, {
       "summary": "Demonstrates an expert knowledge of ecommerce systems. Advanced knowledge of B2C and B2B catalog and order management.",
       "signals": [
         "Design solutions for a complex Magento site",
-          "Apply new technologies to solve complex ecommerce problems."
+          "Apply new technologies to solve complex ecommerce problems.",
+          "Continually learning and teaching Magento technologies and features."
       ],
       "examples": [
-        "",
+        "Work with BA and the Magento architect to define Magento solutions.",
+          "Lead the implementation of new ecommerce features."
       ],
     },
     ],
@@ -168,37 +194,48 @@ export const tracks: Tracks = {
     "milestones": [{
       "summary": "Works effectively within established structures, following current best practices",
       "signals": [
-        "Basic knowledge of Linux commands."
+        "Basic knowledge of Linux commands.",
+          "Investigate PHP fatal errors.",
+          "Make simple configuration changes to apache or PHP."
       ],
       "examples": [
-        "Write simple SQL statements.",
-          "Make simple configuration changes to apache or PHP."
+        "Resolve out of disk errors.",
+          "Resolve file permission errors independently",
+          "Write simple SQL statements."
       ],
     }, {
       "summary": "Develops new features on existing architecture, or minor improvements to existing architecture",
       "signals": [
-        "Troubleshoot system issues on an existing server"
+        "Troubleshoot system issues on an existing server",
+          "Setup Vagrant development environment without assistance"
       ],
       "examples": [
         "Upgrade PHP on an existing server.",
+          "Configure a MySQL server.",
+          "Configure Apache virtual hosts and .htaccess settings."
       ],
     }, {
       "summary": "Designs standalone systems of moderate complexity, or major new features in existing systems",
       "signals": [
-        "Troubleshoot and fix deployment errors."
+        "Troubleshoot and fix deployment errors.",
+          "Provision a new alpha server environment for Magento 2.",
+          "Resolve performance issues on a live environment."
       ],
       "examples": [
-        "Provision a new alpha server environment for Magento 2.",
-          "Resolve performance issues on a live environment."
+        "Investigate Capistrano scripts to fix a deployment error.",
+          "Using bash scripts to provision a test server for Magento",
+          "Use New Relic and strace to investigate and fix performance issues."
       ],
     }, {
       "summary": "Builds complex, reusable architectures that pioneer best practices for other engineers, or multi-system services",
       "signals": [
-        "Define and develope a deployment pipeline for Magento 2.",
-          "Lead a live site migration to a new Magento environment."
+        "Define and develop a deployment pipeline for Magento 2.",
+          "Lead a live site migration to a new Magento environment.",
+          "Provision the live Magento 2 environment."
       ],
       "examples": [
-        "Provision the live Magento 2 environment.",
+          "Setup a live Magento environment on MageMojo",
+          "Build a deployment pipeline in Jenkins. Using Docker, Jenkins and bash scripts."
       ],
     },
     ],
@@ -211,34 +248,45 @@ export const tracks: Tracks = {
     "milestones": [{
       "summary": "Follows OWASP secure coding practices with help from the team. Gaining knowledge of secure application development.",
       "signals": [
-        "Apply the OWASP coding practices when making small changes to Magento "
+        "Apply the OWASP coding practices when making small changes to Magento ",
+          "Continually learning how to write secure Magento modules"
       ],
       "examples": [
-        "",
+        "Fix a cross site scripting vulnerability.",
+          "Add a form key and validate the key in a Magento controller"
       ],
     }, {
       "summary": "Develops new features following OWASP secure coding practices. Gaining knowledge of PCI compliance.",
       "signals": [
-        "Apply the OWASP coding practices when building a Magento module."
+        "Apply the OWASP coding practices when building a Magento module.",
+          "Identify and fix a known security issue from a scan.",
+          "Understands basic PCI requirements."
       ],
       "examples": [
-        "Identify and fix a known security issue from a scan.",
+        "Find and fix a SQL injection vulnerability.",
+          "Setup the Authorize.net payment module following best practices"
       ],
     }, {
       "summary": "Develops new features following OWASP secure coding practices. Reviews code for security vulnerability. Proficient knowledge of PCI compliance.",
       "signals": [
-        "Discuss PCI complience with a client"
+        "Identify and fix a new security issue from a scan.",
+          "Apply PCI compliance security measures",
+          "Understands the PCI SAQ A and SAQ A-EP requirements"
       ],
       "examples": [
-        "Identify and fix a new security issue from a scan.",
+        "Identify a security issue and work with the client to define a solution.",
+          "Create tools to help fix common security vulnerabilities."
       ],
     }, {
       "summary": "Teaches the OWASP secure coding practices to other engineers. Reviews code for security vulnerability.  Advanced knowledge of PCI compliance.",
       "signals": [
-        "Discuss PCI complience with a client"
+        "Discuss PCI compliance with a client",
+          "Mentor team members on secure coding practices"
       ],
       "examples": [
-        "Mentor team members on secure coding practices ",
+        "Recommends security scanning tools",
+          "Design Magento system that is PCI SAQ A-EP compliant",
+          "Continuously review secure coding practices with the engineering team."
       ],
     },
     ],
@@ -247,38 +295,49 @@ export const tracks: Tracks = {
   "PROJECT_MANAGEMENT": {
     "displayName": "Project Management",
     "category": "B",
-    "description": "Delivers well-scoped programs of work that meet their goals, on time, to budget, harmoniously\t",
+    "description": "Delivers well-scoped programs of work that meet their goals, on time, to budget.\t",
     "milestones": [{
       "summary": "Effectively delivers individual tasks",
       "signals": [
-        "Signals"
+        "Estimates small tasks accurately",
+          "Delivers tightly-scoped projects efficiently"
       ],
       "examples": [
-        "Examples",
+        "Delivered support for a product import.",
+          "Delivered a new email transaction template."
       ],
     }, {
       "summary": "Effectively delivers small personal projects",
       "signals": [
-        "Signals"
+        "Performs research and considers alternative approaches",
+          "Manage multiple support requests across projects."
       ],
       "examples": [
-        "Examples",
+        "Delivers a custom data export process.",
+          "Delivers a minor version upgrade of Magento."
       ],
     }, {
       "summary": "Effectively delivers projects through a small team",
       "signals": [
-        "Signals"
+        "Delegates tasks to others appropriately",
+          "Integrates business needs into project planning",
+          "Manages dependencies within the team."
       ],
       "examples": [
-        "Examples",
+        "Completed release checklist for a well controlled release.",
+          "Delivers ERP integration.",
+          "Delivers a major version upgrade of Magento."
       ],
     }, {
       "summary": "Effectively delivers projects through a large team, or with a significant amount of stakeholders or complexity",
       "signals": [
-        "Signals"
+        "Manages dependencies on other projects and teams",
+          "Considers external constraints and business objectives when planning",
+          "Works with other teams on large projects"
       ],
       "examples": [
-        "Examples",
+        "Delivered large and complex engineering project on time",
+          "Deliver large Magento migration on time."
       ],
     },
     ],
