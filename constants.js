@@ -2,8 +2,7 @@
 import * as d3 from 'd3'
 
 export type TrackId = 'MAGENTO' | 'ECOMMERCE' | 'FOUNDATIONS' | 'SECURITY' |
-  'PROJECT_MANAGEMENT' | 'COMMUNICATION' | 'CRAFT' | 'IDEAS' | 'MENTORSHIP' | 'LEADERSHIP' |
-    'CULTURE'
+  'QUALITY_CRAFT' | 'COMMUNICATION' | 'IDEAS' | 'DRIVE_MENTORSHIP' | 'CULTURE' | 'LEADERSHIP'
 
 export type Milestone = 0 | 1 | 2 | 3 | 4
 
@@ -12,13 +11,13 @@ export type MilestoneMap = {
   'ECOMMERCE': Milestone,
   'FOUNDATIONS': Milestone,
   'SECURITY': Milestone,
-  'PROJECT_MANAGEMENT': Milestone,
+  'QUALITY_CRAFT': Milestone,
   'COMMUNICATION': Milestone,
-  'CRAFT': Milestone,
   'IDEAS': Milestone,
-  'MENTORSHIP': Milestone,
-    'LEADERSHIP': Milestone,
-    'CULTURE': Milestone
+  'DRIVE_MENTORSHIP': Milestone,
+  'DRIVE_MENTORSHIP': Milestone,
+    'CULTURE': Milestone,
+    'LEADERSHIP': Milestone
 }
 export const milestones = [0, 1, 2, 3, 4, ]
 
@@ -35,20 +34,20 @@ export const milestoneToPoints = (milestone: Milestone): number => {
 
 export const pointsToLevels = {
     '0': '1.1',
-    '6': '1.2',
-    '12': '1.3',
-    '18': '2.1',
-    '25': '2.2',
-    '32': '2.3',
-    '40': '3.1',
-    '48': '3.2',
-    '57': '3.3',
-    '66': '4.1',
-    '75': '4.2',
-    '85': '4.3',
+    '14': '1.2',
+    '20': '1.3',
+    '26': '2.1',
+    '33': '2.2',
+    '40': '2.3',
+    '48': '3.1',
+    '56': '3.2',
+    '65': '3.3',
+    '74': '4.1',
+    '83': '4.2',
+    '93': '4.3',
 }
 
-export const maxLevel = 85
+export const maxLevel = 93
 
 export type Track = {
   displayName: string,
@@ -66,13 +65,12 @@ type Tracks = {|
     'ECOMMERCE': Track,
     'FOUNDATIONS': Track,
     'SECURITY': Track,
-    'PROJECT_MANAGEMENT': Track,
+    'QUALITY_CRAFT': Track,
     'COMMUNICATION': Track,
-    'CRAFT': Track,
     'IDEAS': Track,
-    'MENTORSHIP': Track,
-    'LEADERSHIP': Track,
-    'CULTURE': Track
+    'DRIVE_MENTORSHIP': Track,
+    'CULTURE': Track,
+    'LEADERSHIP': Track
 |}
 
 export const tracks: Tracks = {
@@ -81,52 +79,28 @@ export const tracks: Tracks = {
     "category": "A",
     "description": "Develops expertise in the Magento 1.x and 2.x platform.",
     "milestones": [{
-      "summary": "Proficient knowledge of Magento 1.x development and basic knowledge of Magento 2.x development. Follows Magento development best practices.",
+      "summary": "I can follow Magento 1.x and 2.x develoment best practices. I can make basic changes to existing Magento modules.",
       "signals": [
-        "Make simple changes to an existing Magento 1.x modules",
-          "Understands the major differences between M1 and M2 development",
-          "Investigate configuration issues on a Magento 1.x site"
       ],
       "examples": [
-        "Add a new Magento system configuration.",
-          "Add a facebook link to the footer of a site.",
-          "Add a new product EAV attribute."
       ],
     }, {
-      "summary": "Develops advanced modules on Magento 1.x. Demonstrates front-end and back-end development knowledge of both Magento 1.x and 2.x.",
+      "summary": "I can develop advanced Magento 1.x modules and I am learning how to develop Magento 2.x modules.",
       "signals": [
-        "Make simple changes to an existing Magento 2.x module",
-          "Build new Magento 1.x modules from scratch.",
-          "Investigate and fix production issues."
       ],
       "examples": [
-        "Apply Magento security patches and upgrades.",
-          "Create install and upgrade scripts for new database tables.",
-          "Install and configure Magento 1 and 2 extensions."
       ],
     }, {
-      "summary": "Develops advanced modules on both Magento 1.x and Magento 2.x. Builds complex solutions on the Magento platform.",
+      "summary": "I can develop advanced modules on both Magento 1.x and Magento 2.x. I can build complex solutions on Magento.",
       "signals": [
-          "Build new Magento 1.x and 2.x modules from scratch.",
-          "Build Magento 1.x and 2.x integrations with backend systems.",
-          "Create custom Magento 2.x APIs"
       ],
       "examples": [
-          "Implement an M2 integration to a ERP system from scratch.",
-          "Upgrade Magento to a new major version",
-          "Import products and customers into new Magento site."
       ],
     }, {
-      "summary": "Develops advanced modules on both Magento 1.x and Magento 2.x. Is an expert on Magento development and sets the direction and practices for Magento development.",
+      "summary": "I can set the direction and practices for the Magento engineering team. I can teach Magento development to other engineers.",
       "signals": [
-        "Design a new complex feature in Magento and lead the development.",
-          "Build Magento 1.x and 2.x integrations with backend systems.",
-          "Learn and teach Magento best practices."
       ],
       "examples": [
-          "Lead implementation of complex ERP system integration",
-          "Investigate and resolve complex production issues.",
-          "Set the technical direction of the Magento engineering team."
       ],
     }
     ],
@@ -137,51 +111,28 @@ export const tracks: Tracks = {
     "category": "A",
     "description": "Develops expertise in building ecommerce systems. Including catalog, order and inventory management. ",
     "milestones": [{
-      "summary": "Works effectively on an ecommerce system. Gaining knowledge of ecommerce systems.",
+      "summary": "I can learn the basics of an ecommerce system and ask questions about managing an ecommerce site.",
       "signals": [
-        "Understands at a high level the Magento database schema",
-          "Continually learning the basics of ecommerce systems.",
-          "Perform basic Magento admin tasks."
       ],
       "examples": [
-        "Make simple admin changes in Magento.",
-          "Asks questions and finds answers to ecommerce related issues.",
-          "Create catalog, promotions and orders in Magento."
       ],
     }, {
-      "summary": "Develops and maintains an ecommerce system. Has proficient knowledge of catalog, order and inventory management.",
+      "summary": "I can describe how catalog, order and inventory management systems work and troubleshoot issues with these systems.",
       "signals": [
-        "Explains the Magento database schema to another engineer.",
-          "Perform advanced Magento admin tasks.",
-          "Explains how the Magento order process works."
       ],
       "examples": [
-        "Create invoices, shipments, credit memos.",
-          "Configure a new shipping method.",
-          "Setup complex shopping cart rules."
       ],
     }, {
-      "summary": "Demonstrates an advanced knowledge of ecommerce systems. Advanced knowledge of B2C and B2B catalog and order management.",
+      "summary": "I can solve complex ecommerce problems. I can show advanced knowledge of B2C and B2B catalog, order and inventory mangement.",
       "signals": [
-        "Understands how to integrate Magento with an order management system",
-          "Provides recommendations for designing solotions to ecommerce implementations",
-          "Configure Magento 2 B2B shared catalogs and companies. "
       ],
       "examples": [
-        "Build a B2B catalog with custom pricing and payment options",
-          "Implements cron job to process shipment files from a backend system.",
-          "Build API to integration with a backend sytem to import pricing."
       ],
     }, {
-      "summary": "Demonstrates an expert knowledge of ecommerce systems. Advanced knowledge of B2C and B2B catalog and order management.",
+      "summary": "I can design ecommerce solutions and lead the implementation fo new cutting edge features. I am continually learning about ecommerce.",
       "signals": [
-        "Design solutions for a complex Magento site",
-          "Apply new technologies to solve complex ecommerce problems.",
-          "Continually learning and teaching Magento technologies and features."
       ],
       "examples": [
-        "Work with BA and the Magento architect to define Magento solutions.",
-          "Lead the implementation of new ecommerce features."
       ],
     },
     ],
@@ -192,50 +143,28 @@ export const tracks: Tracks = {
     "category": "A",
     "description": "Develops expertise in server technolgies, such as Linux, Apache, MySQL and PHP. Deployments, pipeline and database.",
     "milestones": [{
-      "summary": "Works effectively within established structures, following current best practices",
+      "summary": "I can work within estabished structures to solve basic system issues.",
       "signals": [
-        "Basic knowledge of Linux commands.",
-          "Investigate PHP fatal errors.",
-          "Make simple configuration changes to apache or PHP."
       ],
       "examples": [
-        "Resolve out of disk errors.",
-          "Resolve file permission errors independently",
-          "Write simple SQL statements."
       ],
     }, {
-      "summary": "Develops new features on existing architecture, or minor improvements to existing architecture",
+      "summary": "I can develop new features on an existing server architecture or make minor improvements to existing server architecture.",
       "signals": [
-        "Troubleshoot system issues on an existing server",
-          "Setup Vagrant development environment without assistance"
       ],
       "examples": [
-        "Upgrade PHP on an existing server.",
-          "Configure a MySQL server.",
-          "Configure Apache virtual hosts and .htaccess settings."
       ],
     }, {
-      "summary": "Designs standalone systems of moderate complexity, or major new features in existing systems",
+      "summary": "I can design standalone systems of moderate complexity or design major new features on existing systems.",
       "signals": [
-        "Troubleshoot and fix deployment errors.",
-          "Provision a new alpha server environment for Magento 2.",
-          "Resolve performance issues on a live environment."
       ],
       "examples": [
-        "Investigate Capistrano scripts to fix a deployment error.",
-          "Using bash scripts to provision a test server for Magento",
-          "Use New Relic and strace to investigate and fix performance issues."
       ],
     }, {
-      "summary": "Builds complex, reusable architectures that pioneer best practices for other engineers, or multi-system services",
+      "summary": "I can create net new internal tools, reusable code, and code accelerators and can contribute to those efforts through planning, definition, development and knowledge of what's already available within the market.",
       "signals": [
-        "Define and develop a deployment pipeline for Magento 2.",
-          "Lead a live site migration to a new Magento environment.",
-          "Provision the live Magento 2 environment."
       ],
       "examples": [
-          "Setup a live Magento environment on MageMojo",
-          "Build a deployment pipeline in Jenkins. Using Docker, Jenkins and bash scripts."
       ],
     },
     ],
@@ -246,98 +175,60 @@ export const tracks: Tracks = {
     "category": "A",
     "description": "Develops expertise in secure coding practices, including PCI compliance.",
     "milestones": [{
-      "summary": "Follows OWASP secure coding practices with help from the team. Gaining knowledge of secure application development.",
+      "summary": "I can follow OWASP secure coding practices with help from the team.",
       "signals": [
-        "Apply the OWASP coding practices when making small changes to Magento ",
-          "Continually learning how to write secure Magento modules"
       ],
       "examples": [
-        "Fix a cross site scripting vulnerability.",
-          "Add a form key and validate the key in a Magento controller"
       ],
     }, {
-      "summary": "Develops new features following OWASP secure coding practices. Gaining knowledge of PCI compliance.",
+      "summary": "I can deveop features following OWASP secure coding practices. I am learning about PCI compliance.",
       "signals": [
-        "Apply the OWASP coding practices when building a Magento module.",
-          "Identify and fix a known security issue from a scan.",
-          "Understands basic PCI requirements."
       ],
       "examples": [
-        "Find and fix a SQL injection vulnerability.",
-          "Setup the Authorize.net payment module following best practices"
       ],
     }, {
-      "summary": "Develops new features following OWASP secure coding practices. Reviews code for security vulnerability. Proficient knowledge of PCI compliance.",
+      "summary": "I can review code for security vulnerabilities and describe the PCI requirements for an ecommerce site.",
       "signals": [
-        "Identify and fix a new security issue from a scan.",
-          "Apply PCI compliance security measures",
-          "Understands the PCI SAQ A and SAQ A-EP requirements"
       ],
       "examples": [
-        "Identify a security issue and work with the client to define a solution.",
-          "Create tools to help fix common security vulnerabilities."
       ],
     }, {
-      "summary": "Teaches the OWASP secure coding practices to other engineers. Reviews code for security vulnerability.  Advanced knowledge of PCI compliance.",
+      "summary": "I can teach OWASP secure coding practices to other engineers. I can recommend new practices and security scanning tools to use.",
       "signals": [
-        "Discuss PCI compliance with a client",
-          "Mentor team members on secure coding practices"
       ],
       "examples": [
-        "Recommends security scanning tools",
-          "Design Magento system that is PCI SAQ A-EP compliant",
-          "Continuously review secure coding practices with the engineering team."
       ],
     },
     ],
   },
 
-  "PROJECT_MANAGEMENT": {
-    "displayName": "Project Management",
+  "QUALITY_CRAFT": {
+    "displayName": "Quality & Craft",
     "category": "B",
-    "description": "Delivers well-scoped programs of work that meet their goals, on time, to budget.\t",
+    "description": "\t",
     "milestones": [{
-      "summary": "Effectively delivers individual tasks",
+      "summary": "I can leave the code I work on in as good of shape as I found it",
       "signals": [
-        "Estimates small tasks accurately",
-          "Delivers tightly-scoped projects efficiently"
       ],
       "examples": [
-        "Delivered support for a product import.",
-          "Delivered a new email transaction template."
       ],
     }, {
-      "summary": "Effectively delivers small personal projects",
+      "summary": "I can leave the code I work on in better shape than I found it and am consistently looking for ways to increase my own code quality",
       "signals": [
-        "Performs research and considers alternative approaches",
-          "Manage multiple support requests across projects."
       ],
       "examples": [
-        "Delivers a custom data export process.",
-          "Delivers a minor version upgrade of Magento."
       ],
     }, {
-      "summary": "Effectively delivers projects through a small team",
+      "summary": "I can leave code in substantially better shape than I found it through refactoring and maintainable development of new work and am consistently increasing the code quality of my team",
       "signals": [
-        "Delegates tasks to others appropriately",
-          "Integrates business needs into project planning",
-          "Manages dependencies within the team."
       ],
       "examples": [
-        "Completed release checklist for a well controlled release.",
-          "Delivers ERP integration.",
-          "Delivers a major version upgrade of Magento."
       ],
     }, {
-      "summary": "Effectively delivers projects through a large team, or with a significant amount of stakeholders or complexity",
+      "summary": "I can consistently act as a code quality multiplier through code reviews, mentoring, and trainings",
       "signals": [
-        "Manages dependencies on other projects and teams",
-          "Considers external constraints and business objectives when planning",
-          "Works with other teams on large projects"
       ],
       "examples": [
-        "Delivered large and complex engineering project on time",
-          "Deliver large Magento migration on time."
       ],
     },
     ],
@@ -348,7 +239,7 @@ export const tracks: Tracks = {
     "category": "B",
     "description": "Shares the right amount of information with the right people, at the right time, and listens effectively",
     "milestones": [{
-      "summary": "Communicates effectively to close stakeholders when called upon, and incorporates constructive feedback",
+      "summary": "I can articulate and persuade as needed through the ability to effectively explain technical concepts to non-technical peers",
       "signals": [
         "Signals"
       ],
@@ -356,7 +247,7 @@ export const tracks: Tracks = {
         "Examples",
       ],
     }, {
-      "summary": "Communicates with the wider team appropriately, focusing on timeliness and good quality conversations",
+      "summary": "I can anticipate dependencies and needs of project team members and proactively work with others to resolve issues",
       "signals": [
         "Signals"
       ],
@@ -364,7 +255,7 @@ export const tracks: Tracks = {
         "Examples",
       ],
     }, {
-      "summary": "Proactively shares information, actively solicits feedback, and facilitates communication for multiple stakeholders",
+      "summary": "I can successfully communicate direction and recommendations and be looked to as a subject matter expert by external clients, partners, and stakeholders.",
       "signals": [
         "Signals"
       ],
@@ -372,47 +263,7 @@ export const tracks: Tracks = {
         "Examples",
       ],
     }, {
-      "summary": "Communicates complex ideas skillfully and with nuance, and establishes alignment within the wider organization",
-      "signals": [
-        "Signals"
-      ],
-      "examples": [
-        "Examples",
-      ],
-    },
-    ],
-  },
-
-  "CRAFT": {
-    "displayName": "Craft",
-    "category": "B",
-    "description": "Embodies and promotes practices to ensure excellent quality products and services\t",
-    "milestones": [{
-      "summary": "Delivers consistently good quality work",
-      "signals": [
-        "Signals"
-      ],
-      "examples": [
-        "Examples",
-      ],
-    }, {
-      "summary": "Increases the robustness and reliability of codebases, and devotes time to polishing products and systems",
-      "signals": [
-        "Signals"
-      ],
-      "examples": [
-        "Examples",
-      ],
-    }, {
-      "summary": "Improves others' ability to deliver great quality work",
-      "signals": [
-        "Signals"
-      ],
-      "examples": [
-        "Examples",
-      ],
-    }, {
-      "summary": "Advocates for and models great quality with proactive actions, and tackles difficult and subtle system issues",
+      "summary": "I can create plans, roadmaps, and documentation for team processes, workflow and skillset improvements and successfully motivate team members to accomplish tasks and goals",
       "signals": [
         "Signals"
       ],
@@ -426,9 +277,9 @@ export const tracks: Tracks = {
   "IDEAS": {
     "displayName": "Ideas",
     "category": "B",
-    "description": "Challenges the status quo and effects positive organizational change outside of mandated work",
+    "description": "",
     "milestones": [{
-      "summary": "Identifies opportunities for organizational change or product improvements",
+      "summary": "I can proactively ask questions and have a curiosity about better ways to accomplish tasks",
       "signals": [
         "Signals"
       ],
@@ -436,7 +287,7 @@ export const tracks: Tracks = {
         "Examples",
       ],
     }, {
-      "summary": "Causes change to positively impact a few individuals or minor improvement to an existing product or service",
+      "summary": "I can think independently and can consistently suggest or recommend new, useful ideas and effect positive change within projects and my team",
       "signals": [
         "Signals"
       ],
@@ -444,7 +295,7 @@ export const tracks: Tracks = {
         "Examples",
       ],
     }, {
-      "summary": "Causes change to positively impact an entire team or instigates a minor feature or service",
+      "summary": "I can actively consider and help to develop the ideas of others and can effect change that has a major positive impact within projects or my team",
       "signals": [
         "Signals"
       ],
@@ -452,7 +303,7 @@ export const tracks: Tracks = {
         "Examples",
       ],
     }, {
-      "summary": "Effects change that has a substantial positive impact on the engineering organization or a major product impact",
+      "summary": "I can successfully identify issues and opportunities within the team and work with others to develop ideas that effect positive change in the organization",
       "signals": [
         "Signals"
       ],
@@ -463,12 +314,12 @@ export const tracks: Tracks = {
     ],
   },
 
-  "MENTORSHIP": {
+  "DRIVE_MENTORSHIP": {
     "displayName": "Mentorship",
     "category": "C",
-    "description": "Provides support to colleagues, spreads knowledge, and develops the team.",
+    "description": "",
     "milestones": [{
-      "summary": "Informally mentors individuals in an ad-hoc way, supports new hires, and conveys institutional knowledge",
+      "summary": "I can show a strong desire to learn diverse technologies, techniques and topics out of curiosity and can seek out help and feedback when needed",
       "signals": [
         "Signals"
       ],
@@ -476,7 +327,7 @@ export const tracks: Tracks = {
         "Examples",
       ],
     }, {
-      "summary": "Mentors people proactively, and guides people to realizations rather than providing the answer",
+      "summary": "I can embrace challenges and persist in the face of setbacks while seeing effort as the path to improvement",
       "signals": [
         "Signals"
       ],
@@ -484,7 +335,7 @@ export const tracks: Tracks = {
         "Examples",
       ],
     }, {
-      "summary": "Teaches small groups of engineers and contributes to DEG's shared knowledge base",
+      "summary": "I can apply my strong desire and ability to learn new technologies by applying my own learnings to improve team's skills, code, tools, and processes",
       "signals": [
         "Signals"
       ],
@@ -492,7 +343,7 @@ export const tracks: Tracks = {
         "Examples",
       ],
     }, {
-      "summary": "Encourages people to mentor each other, and creates ways for them to do so",
+      "summary": "I can identify the aptitude and interests of UI team members to help them grow and improve in a direction beneficial for them, the UI team, and DEG",
       "signals": [
         "Signals"
       ],
@@ -502,84 +353,86 @@ export const tracks: Tracks = {
     },
     ],
   },
-    "LEADERSHIP": {
-        "displayName": "Leadership",
-        "category": "C",
-        "description": "Provides leadership in the engineering team. Technical Leader on Magento Team.",
-        "milestones": [{
-            "summary": "Builds professional relationships with coworkers.",
-            "signals": [
-                "Signals"
-            ],
-            "examples": [
-                "Examples",
-            ],
-        }, {
-            "summary": "Trusted Magento engineer on project teams. Provides technical leadership on small projects.",
-            "signals": [
-                "Signals"
-            ],
-            "examples": [
-                "Examples",
-            ],
-        }, {
-            "summary": "Trusted Magento engineer on project teams. Provides technical leadership on large complex projects. ",
-            "signals": [
-                "Signals"
-            ],
-            "examples": [
-                "Examples",
-            ],
-        }, {
-            "summary": "Provides technical leadership on large complex projects. Leads the Magento engineering team.",
-            "signals": [
-                "Signals"
-            ],
-            "examples": [
-                "Examples",
-            ],
-        },
-        ],
-    },
-    "CULTURE": {
-        "displayName": "Culture",
-        "category": "C",
-        "description": "Inspires others and embodies DEG core values.",
-        "milestones": [{
-            "summary": "Does the right thing. Aims to exceed client expectations.",
-            "signals": [
-                "Signals"
-            ],
-            "examples": [
-                "Examples",
-            ],
-        }, {
-            "summary": "Embodies DEG core values. Builds relationships outside of the engineering team. Exceeds client's expectations",
-            "signals": [
-                "Signals"
-            ],
-            "examples": [
-                "Examples",
-            ],
-        }, {
-            "summary": "Promotes DEG core values within the team. Inspires others to exceed client expectations. Able to mentor team members.",
-            "signals": [
-                "Signals"
-            ],
-            "examples": [
-                "Examples",
-            ],
-        }, {
-            "summary": "Provides leadership and sets the example for the team. Builds professional relationships within the team as well as outside the team",
-            "signals": [
-                "Signals"
-            ],
-            "examples": [
-                "Examples",
-            ],
-        },
-        ],
-    },
+
+  "CULTURE": {
+      "displayName": "Culture",
+      "category": "C",
+      "description": "",
+      "milestones": [{
+          "summary": "I can learn DEG's core values and build relationships within the team",
+          "signals": [
+              "Signals"
+          ],
+          "examples": [
+              "Examples",
+          ],
+      }, {
+          "summary": "I can embody our values and have strong relationships within the team",
+          "signals": [
+              "Signals"
+          ],
+          "examples": [
+              "Examples",
+          ],
+      }, {
+          "summary": "I can inspire others by setting the example and have influence within the team",
+          "signals": [
+              "Signals"
+          ],
+          "examples": [
+              "Examples",
+          ],
+      }, {
+          "summary": "I can mentor others on how to embody our values and have influence and relationships outside of team",
+          "signals": [
+              "Signals"
+          ],
+          "examples": [
+              "Examples",
+          ],
+      },
+      ],
+  },
+
+  "LEADERSHIP": {
+      "displayName": "Leadership",
+      "category": "C",
+      "description": "",
+      "milestones": [{
+          "summary": "I can build professional relationships with manager, peers, and stakeholders and provide technical leadership on small projects",
+          "signals": [
+              "Signals"
+          ],
+          "examples": [
+              "Examples",
+          ],
+      }, {
+          "summary": "I can establish respect as a trusted Engineer within project teams and provide technical leadership on medium size projects",
+          "signals": [
+              "Signals"
+          ],
+          "examples": [
+              "Examples",
+          ],
+      }, {
+          "summary": "I can establish trust and respect as a technical leader on the team, help mentor Associate and Mid-level Engineers, and provide technical leadership on large projects",
+          "signals": [
+              "Signals"
+          ],
+          "examples": [
+              "Examples",
+          ],
+      }, {
+          "summary": "I can provide leadership and technical expertise to the Engineering team and DEG overall",
+          "signals": [
+              "Signals"
+          ],
+          "examples": [
+              "Examples",
+          ],
+      },
+      ],
+  },
 
 }
 
@@ -613,10 +466,10 @@ export const categoryColorScale = d3.scaleOrdinal()
   .range(['#00abc2', '#428af6', '#e1439f', '#e54552'])
 
 export const titles = [
-  {label: 'Associate Magento Engineer', minPoints: 0, maxPoints: 17},
-  {label: 'Magento Engineer', minPoints: 18, maxPoints: 39},
-  {label: 'Senior Magento Engineer', minPoints: 40},
-  {label: 'Magento Team Lead', minPoints: 56}
+  {label: 'Associate Magento Engineer', minPoints: 0, maxPoints: 20},
+  {label: 'Magento Engineer', minPoints: 21, maxPoints: 42},
+  {label: 'Senior Magento Engineer', minPoints: 43},
+  {label: 'Magento Team Lead', minPoints: 60}
 ]
 
 export const eligibleTitles = (milestoneMap: MilestoneMap): string[] => {

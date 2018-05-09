@@ -53,13 +53,12 @@ const emptyState = (): SnowflakeAppState => {
         'ECOMMERCE': 0,
         'FOUNDATIONS': 0,
         'SECURITY': 0,
-        'PROJECT_MANAGEMENT': 0,
+        'QUALITY_CRAFT': 0,
         'COMMUNICATION': 0,
-        'CRAFT': 0,
         'IDEAS': 0,
-        'MENTORSHIP': 0,
-        'LEADERSHIP': 0,
-        'CULTURE': 0
+        'DRIVE_MENTORSHIP': 0,
+        'CULTURE': 0,
+        'LEADERSHIP': 0
     },
     focusedTrackId: 'MAGENTO'
   }
@@ -74,13 +73,12 @@ const defaultState = (): SnowflakeAppState => {
         'ECOMMERCE': 2,
         'FOUNDATIONS': 1,
         'SECURITY': 1,
-        'PROJECT_MANAGEMENT': 2,
+        'QUALITY_CRAFT': 2,
         'COMMUNICATION': 1,
-        'CRAFT': 1,
         'IDEAS': 1,
-        'MENTORSHIP': 1,
+        'DRIVE_MENTORSHIP': 1,
+        'CULTURE': 2,
         'LEADERSHIP': 1,
-        'CULTURE': 2
     },
     focusedTrackId: 'MAGENTO'
   }
