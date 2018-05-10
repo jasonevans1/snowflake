@@ -1,7 +1,7 @@
 // @flow
 
 import TrackSelector from '../components/TrackSelector'
-import NightingaleChart from '../components/NightingaleChart'
+//import NightingaleChart from '../components/NightingaleChart'
 import KeyboardListener from '../components/KeyboardListener'
 import Track from '../components/Track'
 import Wordmark from '../components/Wordmark'
@@ -160,12 +160,14 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
             <PointSummaries milestoneByTrack={this.state.milestoneByTrack} />
             <LevelThermometer milestoneByTrack={this.state.milestoneByTrack} />
           </div>
-          <div style={{flex: 0}}>
+		  {/*
+          <div style={{flex: 0}}>		  
             <NightingaleChart
                 milestoneByTrack={this.state.milestoneByTrack}
                 focusedTrackId={this.state.focusedTrackId}
                 handleTrackMilestoneChangeFn={(track, milestone) => this.handleTrackMilestoneChange(track, milestone)} />
-          </div>
+          </div> 
+		  */}
         </div>
         <TrackSelector
             milestoneByTrack={this.state.milestoneByTrack}
