@@ -466,10 +466,10 @@ export const categoryColorScale = d3.scaleOrdinal()
   .range(['#00abc2', '#428af6', '#e1439f', '#e54552'])
 
 export const titles = [
-  {label: 'Associate Magento Engineer', minPoints: 0, maxPoints: 20},
-  {label: 'Magento Engineer', minPoints: 21, maxPoints: 42},
-  {label: 'Senior Magento Engineer', minPoints: 43},
-  {label: 'Magento Team Lead', minPoints: 60}
+  {label: 'Title', minPoints: 0, maxPoints: 20},
+  {label: 'Title', minPoints: 21, maxPoints: 42},
+  {label: 'Title', minPoints: 43},
+  {label: 'Title', minPoints: 60}
 ]
 
 export const eligibleTitles = (milestoneMap: MilestoneMap): string[] => {
