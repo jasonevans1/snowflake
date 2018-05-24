@@ -181,7 +181,7 @@ export const tracks: Tracks = {
       "examples": [
       ],
     }, {
-      "summary": "I can deveop features following OWASP secure coding practices. I am learning about PCI compliance.",
+      "summary": "I can develop features following OWASP secure coding practices. I am learning about PCI compliance.",
       "signals": [
       ],
       "examples": [
