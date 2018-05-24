@@ -1,7 +1,7 @@
 // @flow
 
 import React from 'react'
-import { trackIds, tracks, categoryColorScale } from '../constants'
+import { trackIds, tracks, categoryIds, categoryColorScale } from '../constants'
 import type { MilestoneMap, TrackId } from '../constants'
 
 type Props = {
@@ -13,7 +13,7 @@ type Props = {
 class TrackSelector extends React.Component<Props> {
   render() {
     return (
-      <table>
+	<div>
         <style jsx>{`
           table {
             width: 100%;
@@ -38,6 +38,17 @@ class TrackSelector extends React.Component<Props> {
             font-size: 9px;
           }
         `}</style>
+		<h2>Categories</h2>
+		<table>
+		  <tr>
+			{Array.from(categoryIds).map(c => (
+				<td className="track-selector-value"
+				style={{background: categoryColorScale(c)}}>{c}</td>
+			))}
+		  </tr>
+		</table>
+	<h2>Tracks</h2>
+      <table>
         <tbody>
           <tr>
             {trackIds.map(trackId => (
@@ -57,7 +68,8 @@ class TrackSelector extends React.Component<Props> {
           </tr>
         </tbody>
       </table>
-    )
+	</div>
+    );
   }
 }
 

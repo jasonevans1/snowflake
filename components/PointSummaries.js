@@ -43,8 +43,8 @@ class PointSummaries extends React.Component<Props> {
       }
     ]
 
-    return (
-      <table>
+    return (null)
+      /*<table>
         <style jsx>{`
           table {
             border-spacing: 3px;
@@ -84,7 +84,7 @@ class PointSummaries extends React.Component<Props> {
           </tr>
         </tbody>
       </table>
-    )
+		*/
   }
 }
 

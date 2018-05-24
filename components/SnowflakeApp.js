@@ -1,7 +1,6 @@
 // @flow
 
 import TrackSelector from '../components/TrackSelector'
-//import NightingaleChart from '../components/NightingaleChart'
 import KeyboardListener from '../components/KeyboardListener'
 import Track from '../components/Track'
 import Wordmark from '../components/Wordmark'
@@ -66,7 +65,7 @@ const emptyState = (): SnowflakeAppState => {
 
 const defaultState = (): SnowflakeAppState => {
   return {
-    name: 'Random DEG Employee',
+    name: '',
     title: 'Magento Engineer',
     milestoneByTrack: {
         'MAGENTO': 2,
@@ -150,7 +149,7 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
                   className="name-input"
                   value={this.state.name}
                   onChange={e => this.setState({name: e.target.value})}
-                  placeholder="Name"
+                  placeholder="<Enter engineer's name>"
                   />
               <TitleSelector
                   milestoneByTrack={this.state.milestoneByTrack}
@@ -160,14 +159,6 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
             <PointSummaries milestoneByTrack={this.state.milestoneByTrack} />
             <LevelThermometer milestoneByTrack={this.state.milestoneByTrack} />
           </div>
-		  {/*
-          <div style={{flex: 0}}>		  
-            <NightingaleChart
-                milestoneByTrack={this.state.milestoneByTrack}
-                focusedTrackId={this.state.focusedTrackId}
-                handleTrackMilestoneChangeFn={(track, milestone) => this.handleTrackMilestoneChange(track, milestone)} />
-          </div> 
-		  */}
         </div>
         <TrackSelector
             milestoneByTrack={this.state.milestoneByTrack}

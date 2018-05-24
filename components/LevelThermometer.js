@@ -77,7 +77,8 @@ class LevelThermometer extends React.Component<Props> {
       if (categoryPoint.points) lastCategoryIndex = i
     })
     let cumulativePoints = 0
-    return (
+    return (null)
+	/*
       <figure>
         <style jsx>{`
           figure {
@@ -119,7 +120,7 @@ class LevelThermometer extends React.Component<Props> {
           </g>
         </svg>
       </figure>
-    )
+    */
   }
 }
 

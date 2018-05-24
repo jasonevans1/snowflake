@@ -76,7 +76,7 @@ type Tracks = {|
 export const tracks: Tracks = {
   "MAGENTO": {
     "displayName": "Magento",
-    "category": "A",
+    "category": "Magento",
     "description": "Develops expertise in the Magento 1.x and 2.x platform.",
     "milestones": [{
       "summary": "I can follow Magento 1.x and 2.x develoment best practices. I can make basic changes to existing Magento modules.",
@@ -108,7 +108,7 @@ export const tracks: Tracks = {
 
   "ECOMMERCE": {
     "displayName": "Ecommerce",
-    "category": "A",
+    "category": "Magento",
     "description": "Develops expertise in building ecommerce systems. Including catalog, order and inventory management. ",
     "milestones": [{
       "summary": "I can learn the basics of an ecommerce system and ask questions about managing an ecommerce site.",
@@ -140,7 +140,7 @@ export const tracks: Tracks = {
 
   "FOUNDATIONS": {
     "displayName": "Foundations",
-    "category": "A",
+    "category": "Magento",
     "description": "Develops expertise in server technolgies, such as Linux, Apache, MySQL and PHP. Deployments, pipeline and database.",
     "milestones": [{
       "summary": "I can work within estabished structures to solve basic system issues.",
@@ -172,7 +172,7 @@ export const tracks: Tracks = {
 
   "SECURITY": {
     "displayName": "Security",
-    "category": "A",
+    "category": "Magento",
     "description": "Develops expertise in secure coding practices, including PCI compliance.",
     "milestones": [{
       "summary": "I can follow OWASP secure coding practices with help from the team.",
@@ -204,8 +204,8 @@ export const tracks: Tracks = {
 
   "QUALITY_CRAFT": {
     "displayName": "Quality & Craft",
-    "category": "B",
-    "description": "\t",
+    "category": "Engineering",
+    "description": "Takes a professional approach to developing deficiency-free software that meets the needs of the user.",
     "milestones": [{
       "summary": "I can leave the code I work on in as good of shape as I found it",
       "signals": [
@@ -236,8 +236,8 @@ export const tracks: Tracks = {
 
   "COMMUNICATION": {
     "displayName": "Communication",
-    "category": "B",
-    "description": "Shares the right amount of information with the right people, at the right time, and listens effectively",
+    "category": "Engineering",
+    "description": "Shares the right amount of information with the right people, at the right time, and listens effectively.",
     "milestones": [{
       "summary": "I can articulate and persuade as needed through the ability to effectively explain technical concepts to non-technical peers",
       "signals": [
@@ -276,8 +276,8 @@ export const tracks: Tracks = {
 
   "IDEAS": {
     "displayName": "Ideas",
-    "category": "B",
-    "description": "",
+    "category": "Engineering",
+    "description": "Contributes new and quality ideas, as well as ways to effectively implement them.",
     "milestones": [{
       "summary": "I can proactively ask questions and have a curiosity about better ways to accomplish tasks",
       "signals": [
@@ -316,8 +316,8 @@ export const tracks: Tracks = {
 
   "DRIVE_MENTORSHIP": {
     "displayName": "Mentorship",
-    "category": "C",
-    "description": "",
+    "category": "Engineering",
+    "description": "Acts as a key influencer to promote knowledge sharing, skill develoment and employee engagement.",
     "milestones": [{
       "summary": "I can show a strong desire to learn diverse technologies, techniques and topics out of curiosity and can seek out help and feedback when needed",
       "signals": [
@@ -356,8 +356,8 @@ export const tracks: Tracks = {
 
   "CULTURE": {
       "displayName": "Culture",
-      "category": "C",
-      "description": "",
+      "category": "Engineering",
+      "description": "Shares company core beliefs and makes unique and meaningful contributions to the team, department and workplace.",
       "milestones": [{
           "summary": "I can learn DEG's core values and build relationships within the team",
           "signals": [
@@ -396,8 +396,8 @@ export const tracks: Tracks = {
 
   "LEADERSHIP": {
       "displayName": "Leadership",
-      "category": "C",
-      "description": "",
+      "category": "Engineering",
+      "description": "Clearly thinks through and communicates ideas, demonstrates sound judgement and a high level of personal integrity and commitment.",
       "milestones": [{
           "summary": "I can build professional relationships with manager, peers, and stakeholders and provide technical leadership on small projects",
           "signals": [
