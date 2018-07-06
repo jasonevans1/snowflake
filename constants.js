@@ -79,7 +79,7 @@ export const tracks: Tracks = {
     "category": "Magento",
     "description": "Develops expertise in the Magento 1.x and 2.x platform.",
     "milestones": [{
-      "summary": "I can follow Magento 1.x and 2.x develoment best practices. I can make basic changes to existing Magento modules.",
+      "summary": "I can follow Magento 1.x and 2.x development best practices. I can make basic changes to existing Magento modules.",
       "signals": [
       ],
       "examples": [
@@ -141,9 +141,9 @@ export const tracks: Tracks = {
   "FOUNDATIONS": {
     "displayName": "Foundations",
     "category": "Magento",
-    "description": "Develops expertise in server technolgies, such as Linux, Apache, MySQL and PHP. Deployments, pipeline and database.",
+    "description": "Develops expertise in server technologies, such as Linux, Apache, MySQL and PHP. Deployments, pipeline and database.",
     "milestones": [{
-      "summary": "I can work within estabished structures to solve basic system issues.",
+      "summary": "I can work within established structures to solve basic system issues.",
       "signals": [
       ],
       "examples": [
@@ -317,7 +317,7 @@ export const tracks: Tracks = {
   "DRIVE_MENTORSHIP": {
     "displayName": "Mentorship",
     "category": "Engineering",
-    "description": "Acts as a key influencer to promote knowledge sharing, skill develoment and employee engagement.",
+    "description": "Acts as a key influencer to promote knowledge sharing, skill development and employee engagement.",
     "milestones": [{
       "summary": "I can show a strong desire to learn diverse technologies, techniques and topics out of curiosity and can seek out help and feedback when needed",
       "signals": [
