@@ -343,7 +343,7 @@ export const tracks: Tracks = {
         "Examples",
       ],
     }, {
-      "summary": "I can identify the aptitude and interests of UI team members to help them grow and improve in a direction beneficial for them, the UI team, and DEG",
+      "summary": "I can identify the aptitude and interests of Magento team members to help them grow and improve in a direction beneficial for them, the Magento team, and DEG",
       "signals": [
         "Signals"
       ],
